@@ -149,3 +149,24 @@ body{
     height: 100%;
     object-fit: cover;
 }
+.card-box{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:20px;
+}
+.card-box .card{
+    position: relative;
+    background-color: #FFF;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.card-box .card .numbers{
+    position: relative;
+    font-size: 2em;
+    font-weight: 500;
+}
