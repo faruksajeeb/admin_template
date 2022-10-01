@@ -17,32 +17,74 @@ body{
     height: 100%;
    /* background-color: tomato; */
     transition: 0.5s;
-    overflow: hidden;
+    /* overflow: hidden !important;
+    overflow-anchor: none;
+    -ms-overflow-style: none;
+    touch-action: auto; */
+	
 }
 .navigation.active{
     width:60px;
 }
-.navigation ul{
+/* .navigation ul{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    
+} */
+.brand-name{
+    margin-bottom: 15px;
+	box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%);
+	
+ }
+/* .navigation ul li:nth-child(1):hover{ */
+.brand-name:hover{
+    background-color:transparent;
+ }
+ .side-menu{
+    position: relative;
+    overflow: hidden !important;
+    /* overflow-anchor: none;
+    -ms-overflow-style: none;
+    touch-action: auto; */
 }
+.side-menu:hover{
+    overflow-y: scroll !important;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    /* border-radius: 5px; */
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    /* border-radius: 5px; */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 .navigation ul li{
     position: relative;
     width: 100%;
     list-style: none;
+    border-bottom: 1px solid #F4F7F5;
 }
 .navigation ul li:hover{
    background-color:antiquewhite;
 }
-.navigation ul li:nth-child(1){
-    margin-bottom: 15px;
-	box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%);
- }
-.navigation ul li:nth-child(1):hover{
-    background-color:transparent;
- }
+/* .navigation ul li:nth-child(1){ */
+
  .navigation ul li a{
     position: relative;
     display: block;
@@ -58,7 +100,7 @@ body{
     height: 60px;
     line-height: 60px;
     text-align: center;
-    padding: 0 15px;
+    padding: 0 16px;
     font-size:20px;
 }
 .navigation ul li a .icon .fa{
@@ -114,6 +156,13 @@ body{
     color: #111;
 
 }
+.toggle.active::before{
+    content: '\f00d';
+    font-size: 25px;
+    color:#000;
+    font-weight: normal;
+    
+}
 
 .search{
     position: relative;
@@ -136,29 +185,28 @@ body{
 .search label .fa{
     position: absolute;
     left: 15px;
-    top:4px;
+    top:12px;
 }
 .user {
     position: relative;
-    min-width: 50px;
-    width: 50px;
-    height: 50px;
+    /* min-width: 50px; */
+    /* width: 50px;
+    height: 50px; */
     border-radius: 50%;
-    overflow: hidden;
+    /* overflow: hidden; */
     cursor: pointer;
 }
-.user img{
+/* .user img{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 .card-box{
     position: relative;
     width: 100%;
-    padding: 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap:20px;
@@ -227,7 +275,7 @@ body{
     .toggle.active::before{
         content: '\f00d';
         font-size: 30px;
-        color:#FFF;
+        color:#000;
         
     }
     .main, .main.active{
