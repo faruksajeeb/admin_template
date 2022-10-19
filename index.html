@@ -10,129 +10,151 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-		<style>
-		.themed-grid-col {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: rgba(86, 61, 124, .15);
-  border: 1px solid rgba(255, 255, 255, 1);
-}
+    <style>
+        .themed-grid-col {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
 
-.themed-container {
-  padding: .75rem;
-  margin-bottom: 1.5rem;
-  background-color: rgba(0, 123, 255, .15);
-  border: 1px solid rgba(255, 255, 255, 1);
-}
-		</style>
+        .themed-container {
+            padding: .75rem;
+            margin-bottom: 1.5rem;
+            background-color: rgba(0, 123, 255, .15);
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+
+    </style>
 </head>
 
 <body>
-    <div class="container-fluid m-0 p-0">
-        <div class="navigation bg-white">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="p-0 brand-name">
-                        <li class="">
-                            <a href="" class="bg-white">
-                                <span class="icon"><i class="fa-brands fa-xl fa-apple"></i></span>
-                                <span class="title py-3">
-                                    <h3>Company Name</h3>
-                                </span>
+    <section id="sidebar">
+            <div class="navigation bg-white">
+                <div class="row brand-name-section">
+                    <div class="col-md-12">
+                        <ul class="p-0 brand-name">
+                            <li class="">
+                                <a href="" class="bg-white ">
+                                    <span class="icon"><i class="fa-brands fa-xl fa-apple"></i></span>
+                                    <span class="title">
+                                        <h5 class=" py-4">Brand Name</h5>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="side-menu h-100 ">
+                    <ul class="p-0" id="menu">
+                        <li>
+                            <a href="">
+                                <span class="icon"><i class="fa-solid fa-house"></i></span>
+                                <span class="title">Dashboard </span>
                             </a>
                         </li>
+                        <li>
+                            <a href="">
+                                <span class="icon"><i class="fa-solid fa-table"></i></span>
+                                <span class="title">Tables </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="icon"><i class="fa-solid fa-pencil"></i></span>
+                                <span class="title">Forms </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu2" data-bs-toggle="collapse"
+                                class="nav-link ps-1 align-middle ">
+                                <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                                <span class="ms-1 d-sm-inline title">Sub menu</span></a>
+                            <ul class="collapse nav flex-column ms-3 ps-3" id="submenu2"
+                                data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0"> <span class="d-sm-inline">Item</span>
+                                        1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-sm-inline">Item</span>
+                                        2</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#submenu3" data-bs-toggle="collapse"
+                                class="nav-link ps-1 align-middle ">
+                                <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                                <span class="ms-1 d-sm-inline title">Sub menu3</span></a>
+                            <ul class="collapse nav flex-column ms-3 ps-3" id="submenu3"
+                                data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0"> <span
+                                            class=" d-sm-inline">Item</span> 1</a>
+                                </li>
+                                <li>
+                                    <a href="#submenu_label3" data-bs-toggle="collapse"
+                                        class="nav-link px-0"> <span class="d-sm-inline"><i
+                                                class="fa-solid fa-angle-right"></i> Item</span>
+                                        2</a>
+                                    <ul class="collapse nav flex-column ms-3 ps-3" id="submenu_label3"
+                                        data-bs-parent="#submenu3">
+                                        <li class="w-100">
+                                            <a href="#" class="nav-link px-0"> <span class="d-sm-inline">Sub
+                                                    menu
+                                                    1</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link px-0"> <span class="d-sm-inline">Sub
+                                                    menu
+                                                    2</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#submenu2_label3" data-bs-toggle="collapse"
+                                        class="nav-link px-0">
+                                        <span class="d-sm-inline"><i class="fa-solid fa-angle-right"></i>
+                                            Item</span>
+                                        3</a>
+                                    <ul class="collapse nav flex-column ms-3 ps-3" id="submenu2_label3"
+                                        data-bs-parent="#submenu3">
+                                        <li class="w-100">
+                                            <a href="#" class="nav-link px-0"> <span class="d-sm-inline">Sub
+                                                    menu
+                                                    1</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-link px-0"> <span class="d-sm-inline">Sub
+                                                    menu
+                                                    2</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="icon"><i class="fa-solid fa-pencil"></i></span>
+                                <span class="title">Forms </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="icon"><i class="fa-solid fa-pencil"></i></span>
+                                <span class="title">Forms </span>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
-
-            <div class="side-menu h-100 ">
-                <ul class="p-0" id="menu">
-                    <li>
-                        <a href="">
-                            <span class="icon"><i class="fa-solid fa-house"></i></span>
-                            <span class="title">Dashboard </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon"><i class="fa-solid fa-table"></i></span>
-                            <span class="title">Tables </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon"><i class="fa-solid fa-pencil"></i></span>
-                            <span class="title">Forms </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link ps-1 align-middle ">
-                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
-                            <span class="ms-1 d-sm-inline title">Sub menu</span></a>
-                        <ul class="collapse nav flex-column ms-3 ps-3" id="submenu2" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class="d-sm-inline">Item</span> 1</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-sm-inline">Item</span> 2</a>
-
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link ps-1 align-middle ">
-                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
-                            <span class="ms-1 d-sm-inline title">Sub menu3</span></a>
-                        <ul class="collapse nav flex-column ms-3 ps-3" id="submenu3" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class=" d-sm-inline">Item</span> 1</a>
-                            </li>
-                            <li>
-                                <a href="#submenu_label3" data-bs-toggle="collapse" class="nav-link px-0"> <span
-                                        class="d-sm-inline"><i class="fa-solid fa-angle-right"></i> Item</span> 2</a>
-                                <ul class="collapse nav flex-column ms-3 ps-3" id="submenu_label3"
-                                    data-bs-parent="#submenu3">
-                                    <li class="w-100">
-                                        <a href="#" class="nav-link px-0"> <span class="d-sm-inline">Sub menu
-                                                1</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-0"> <span class="d-sm-inline">Sub menu
-                                                2</span></a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#submenu2_label3" data-bs-toggle="collapse" class="nav-link px-0"> <span
-                                        class="d-sm-inline"><i class="fa-solid fa-angle-right"></i> Item</span> 3</a>
-                                <ul class="collapse nav flex-column ms-3 ps-3" id="submenu2_label3"
-                                    data-bs-parent="#submenu3">
-                                    <li class="w-100">
-                                        <a href="#" class="nav-link px-0"> <span class="d-sm-inline">Sub menu
-                                                1</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-0"> <span class="d-sm-inline">Sub menu
-                                                2</span></a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon"><i class="fa-solid fa-pencil"></i></span>
-                            <span class="title">Forms </span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-
-    </div>
-    <div class="main">
-        <div class="topbar">
+    </section>
+    <section id="main" class="main">
+        <div class="topbar  sticky-top ">
             <div class="toggle " onclick="toggleMenu()">
 
             </div>
@@ -145,12 +167,16 @@
 
             </div>
             <div class="dropdown user ">
-                <a href="#" class="d-flex align-items-center text-black text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="user.png" alt="hugenerd" width="30" height="30" class="rounded-circle float-end ">
-                    
+                <a href="#"
+                    class="d-flex align-items-center text-black text-decoration-none dropdown-toggle"
+                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="user.png" alt="hugenerd" width="30" height="30"
+                        class="rounded-circle float-end ">
+
                     <span class="d-none d-sm-inline mx-1">Omar Faruk Sajeeb</span>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-light text-small shadow" aria-labelledby="dropdownUser1">
+                <ul class="dropdown-menu dropdown-menu-light text-small shadow"
+                    aria-labelledby="dropdownUser1">
                     <li><a class="dropdown-item" href="#">Change Password</a></li>
                     <li><a class="dropdown-item" href="#">Settings</a></li>
                     <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -200,63 +226,63 @@
                     </div>
                 </div>
             </div>
-			<div class="row align-items-md-stretch">
-			  <div class="col-md-3">
-				<div class="h-100 p-5 text-dark bg-white rounded-3 text-center">
-				  <h2>5000+</h2>
-				  <p>Daily Views</p>
-				  <div class="iconBox">
+            <div class="row align-items-md-stretch">
+                <div class="col-md-3">
+                    <div class="h-100 p-5 text-dark bg-white rounded-3 text-center">
+                        <h2>5000+</h2>
+                        <p>Daily Views</p>
+                        <div class="iconBox">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="h-100 p-5 text-dark bg-white rounded-3 text-center">
+                        <h2>1200</h2>
+                        <p>Sales</p>
+                        <div class="iconBox">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="h-100 p-5 text-dark bg-white rounded-3 text-center">
+                        <h2>2000</h2>
+                        <p>Purchase</p>
+                        <div class="iconBox">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="h-100 p-5 text-dark bg-white rounded-3 text-center">
+                        <h2>100</h2>
+                        <p>Comments</p>
+                        <div class="iconBox">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="mt-4">Gutters</h2>
+            <div class="row row-cols-1 row-cols-md-3 gx-4 m-1">
+                <div class="col themed-grid-col text-center">
+                    <div class="iconBox">
                         <i class="fa fa-eye"></i>
                     </div>
-				</div>
-			  </div>
-			  <div class="col-md-3">
-				<div class="h-100 p-5 text-dark bg-white rounded-3 text-center">
-				  <h2>1200</h2>
-				  <p>Sales</p>
-				  <div class="iconBox">
-                        <i class="fa fa-eye"></i>
-                    </div>
-				</div>
-			  </div>
-			  <div class="col-md-3">
-				<div class="h-100 p-5 text-dark bg-white rounded-3 text-center">
-				  <h2>2000</h2>
-				  <p>Purchase</p>
-				  <div class="iconBox">
-                        <i class="fa fa-eye"></i>
-                    </div>
-				</div>
-			  </div>
-			  <div class="col-md-3">
-				<div class="h-100 p-5 text-dark bg-white rounded-3 text-center">
-				  <h2>100</h2>
-				  <p>Comments</p>
-				  <div class="iconBox">
-                        <i class="fa fa-eye"></i>
-                    </div>
-				</div>
-			  </div>
-			 </div>
-			<h2 class="mt-4">Gutters</h2>
-			<div class="row row-cols-1 row-cols-md-3 gx-4 m-1">
-			  <div class="col themed-grid-col text-center">
-					<div class="iconBox">
-                        <i class="fa fa-eye"></i>
-                    </div>
-					<div>
+                    <div>
                         <div class="numbers">1,024</div>
                         <div class="card-name">Comments</div>
                     </div>
-                    
-			  </div>
-			  <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
-			  <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
-			  <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
-			  <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
-			  <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
-			</div>
-			<hr/>
+
+                </div>
+                <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
+                <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
+                <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
+                <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
+                <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
+            </div>
+            <hr />
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
@@ -310,15 +336,10 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
-
-
-    </div>
-    </div>
+    </section>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script>

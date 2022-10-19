@@ -2,18 +2,15 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Courier New', Courier, monospace;
 }
 body{
     overflow-x: hidden;
 }
-.container-fluid{	
-    position:relative;
-    width:100%;
-}
+
 .navigation{
     position: fixed;
-    width: 300px;
+    width: 250px;
     height: 100%;
    /* background-color: tomato; */
     transition: 0.5s;
@@ -117,8 +114,8 @@ body{
 }
 .main{
     position: absolute;
-    width: calc(100% - 300px);
-    left: 300px;
+    width: calc(100% - 250px);
+    left: 250px;
     min-height: 100vh;
     background-color:#f7f7f7;
     transition: 0.5s;
@@ -133,7 +130,7 @@ body{
 	border-left: 1px solid white;
 	box-shadow: 1px 1px 1px 0 rgb(0 0 0 /20%);
 	
-    height: 60px;
+    height: 61px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -166,7 +163,7 @@ body{
 
 .search{
     position: relative;
-    width: 400px;
+    width: 300px;
     margin: 0 10px;
 }
 .search label{
@@ -229,19 +226,19 @@ body{
 
 @media(max-width:992px){
     .navigation{
-        left: -300px;
+        left: -250px;
     }
     .navigation.active{
         left:0;
-        width: 300px;
+        width: 250px;
     }
     .main{
         width:100%;
         left:0;
     }
     .main.active{
-        width:calc(100% - 300px);
-        left: 300px;
+        width:calc(100% - 250px);
+        left: 250px;
     }
     .card-box{
         grid-template-columns: repeat(2,1fr);
